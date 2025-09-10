@@ -1,18 +1,13 @@
-## Getting Started
+# MonitoriaPOO-JogoComposição
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto é um pequeno exemplo sobre o uso de Composição ("tem um") em Programação Orientada a Objetos (POO) com Java.
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
+## Objetivos Didáticos
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- Entender a diferença entre herança e composição em POO.
+- Praticar a implementação de classes que utilizam composição.
+- Servir como material de apoio para monitorias e estudos de POO.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Projeto desenvolvido para fins didáticos na monitoria de Programação Orientada a Objetos.
