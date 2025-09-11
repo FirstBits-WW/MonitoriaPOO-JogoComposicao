@@ -1,11 +1,12 @@
-public class jogador {
+public class jogador extends Entidade {
 
     private Vida vida;
     private Ataque ataque;
 
-    public jogador() {
+    public jogador(String nomeID) {
         this.vida = new Vida(10, 10);
         this.ataque = new Ataque(20);
+        this.setNomeID(nomeID);
     }
     public void atacarFlat(Vida vidaAlvo){
         vidaAlvo.receberDanoFlat(ataque.getForçaAtaque());
@@ -22,6 +23,11 @@ public class jogador {
     public void setAtaque(Ataque ataque) {
         this.ataque = ataque;
     }
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + " // nome: " + getNomeID() + " // " + vida +" // " + ataque;
+    }
+    
 
 
 }

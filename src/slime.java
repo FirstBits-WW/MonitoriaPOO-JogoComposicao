@@ -1,10 +1,11 @@
-public class slime {
+public class slime extends Entidade {
     private Vida vida;
     private Ataque ataque;
 
-    public slime() {
+    public slime(String nomeID) {
         this.vida = new Vida(100, 100);
         this.ataque = new Ataque(1);
+        this.setNomeID(nomeID);
 
     }
     public void atacar(Vida vidaAlvo){
@@ -23,6 +24,11 @@ public class slime {
     public void setAtaque(Ataque ataque) {
         this.ataque = ataque;
     }
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + " // nome: " + getNomeID() + " // " + vida +" // " + ataque;
+    }
+    
     
 
 
